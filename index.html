@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Bar-One</title>
     <script src="https://kit.fontawesome.com/f200e90931.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Chathura&family=Tulpen+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <header>
         <nav class="topNav">
             <div class="wrapper">
-                <h2 class="logo">Bar-One</h2>
+                
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
+                        <li class="logo">Bar-One</li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
             </div>
         </nav>
-        <div class="wrapper">
-            <h1>Bar-One</h1>
-            <h3>Place to be</h3>
+        <div class="headerImageContainer">
+            <div class="wrapper">
+                <h1>Bar-One <span>Place to be</span></h1>
+            </div>
         </div>
     </header>
 
@@ -34,17 +37,29 @@
         <section class="about">
             <div class="wrapper">
                 <ul>
-                    <li><i class="fa-solid fa-house-chimney"></i>
-                    <h4>New space</h4>
+                    <li>
+                        <div class="nextTo">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        <h2>New space</h2>
+                        </div>
                     <p>Ut fells eros, vehicula eu magna nec, loreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit, sit amet imperdiet dolor placerat.</p></li>
-                    <li><i class="fa-solid fa-users"></i>
-                    <h4>Community</h4>
+                    <li>
+                        <div class="nextTo">
+                        <i class="fa-solid fa-users"></i>
+                        <h2>Community</h2>
+                        </div>
                     <p>Ut fells eros, vehicula eu magna nec, loreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit, sit amet imperdiet dolor placerat.</p></li>
-                    <li><i class="fa-solid fa-file"></i>
-                    <h4>Blog</h4>
+                    <li>
+                        <div class="nextTo">
+                            <i class="fa-solid fa-file"></i>
+                            <h2>Blog</h2>
+                        </div>
                     <p>Ut fells eros, vehicula eu magna nec, loreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit, sit amet imperdiet dolor placerat.</p></li>
-                    <li><i class="fa-solid fa-phone-flip"></i>
-                    <h4>Get in touch</h4>
+                    <li>
+                        <div class="nextTo">
+                            <i class="fa-solid fa-phone-flip"></i>
+                            <h2>Get in touch</h2>
+                        </div>
                     <p>Ut fells eros, vehicula eu magna nec, loreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit, sit amet imperdiet dolor placerat.</p></li>
                 </ul>
             </div>
@@ -52,22 +67,22 @@
         <section class="planLocations">
             <div class="wrapper">
                 <ul>
-                    <li><img src="" alt="view of bar with many light above"></li>
-                    <li><h4 class="plan">Plan ahead</h4>
+                    <li><img src="./assets/left-image.jpg" alt="view of bar with many light above"></li>
+                    <li><h2 class="plan">Plan ahead</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum locus tristique eu. Sed urna ex, porttitor nec ioculis at.</p>
-                    <button>Read More</button></li>
-                    <li><img src="" alt="view of bar with barstools"></li>
-                    <li><h4 class="locations">New locations</h4>
+                    <button><a href="#">Read More</a></button></li>
+                    <li><img src="./assets/right-image.jpg" alt="view of bar with barstools"></li>
+                    <li><h2 class="locations">New locations</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum locus tristique eu. Sed urna ex, porttitor nec ioculis at.</p>
-                    <button>Read More</button></li>
+                    <button><a href="#">Read More</a></button></li>
                 </ul>
             </div>
         </section>
         <section class="party">
             <div class="wrapper">
-                <h4>Want to host a party?</h4>
+                <h2>Want to host a party?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nulla quod dolorum ex cum, ipsum cumque non atque et, repellendus, eos veritatis facere! Totam aut porro ab exercitationem, quo sunt sapiente amet. Molestiae ea voluptate tempora omnis aut itaque! Aspernatur facilis magni, quo quas soluta dolorum dolor rerum.</p>
-                <button>Find Out More</button>
+                <button><a href="#">Find Out More</a></button>
             </div>
         </section>
         <section class="beerImage">
@@ -75,17 +90,17 @@
         </section>
         <section class="events">
             <div class="wrapper">
-                <img src="" alt="">
-                <h4>Events</h4>
+                <img src="./assets/small-box-image.jpg" alt="women with drinks laughing">
+                <h2>Events</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab fugit error maxime ratione repudiandae iste est consequatur ipsam, ullam, magni alias, officia magnam perspiciatis commodi quas. Quaerat est, repudiandae dolore, et odio, natus inventore in quis magni officia odit totam ea maxime expedita. Sit, aliquam harum quaerat distinctio ut quibusdam, non totam iure dicta earum dolor eaque illum hic libero delectus. Tempore expedita quia necessitatibus. Necessitatibus voluptatum minima quidem qui.</p>
-                <button>Find Out More</button>
+                <button><a href="#">Find Out More</a></button>
             </div>
         </section>
         <section class="gallery">
             <div class="wrapper">
-                <img src="" alt="view of bar">
-                <img src="" alt="burger and fries plate">
-                <img src="" alt="cocktail with tomatoes and bacon">
+                <img src="./assets/gallery-image-1.jpg" alt="view of bar">
+                <img src="./assets/gallery-image-2.jpg" alt="burger and fries plate">
+                <img src="./assets/gallery-image-3.jpg" alt="cocktail with tomatoes and bacon">
             </div>
         </section>
     </main>
