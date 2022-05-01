@@ -1,28 +1,20 @@
 .about {
     background-color: $black;
-    padding: 60px 0;
-    position: relative;
+    padding: 110px 0 100px;
     ul {
         margin: 0;
         display: flex;
         flex-wrap: wrap;
-         
         li {
+            display: flex;
             padding: 40px 15px;
             flex-basis: calc(100% / 2);
-            
-            .nextTo {
-                display: flex;
-                align-items: center;
-                
                 i {
-                    padding-right: 15px;
-                    .fa-house-chimney {
-                    position: absolute;
-                    left: 20px;
-                    }
+                    padding: 20px 40px 0 0;
+                    // align-self: center;
+                    // position: relative;
+                    // top: 30px;
                 }
-            }
             h2 {
                 margin: 10px 0;
                 display: block;

@@ -282,8 +282,24 @@ a:visited {
   color: #FFFFFF;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: "Tulpen One", cursive;
+  font-size: 35px;
+  letter-spacing: 1.3px;
+  border: none;
+  background-color: #BF2603;
+  padding: 7px 25px;
+}
+
 header {
   background-color: #111010;
+  position: relative;
 }
 
 nav ul {
@@ -323,7 +339,10 @@ h1 {
   text-align: center;
   color: #FF8327;
   margin: 0;
-  padding: 0;
+  padding: 100px 0 30px 0;
+  position: relative;
+  bottom: -75px;
+  z-index: 30;
 }
 h1 span {
   font-family: "Chathura", sans-serif;
@@ -343,14 +362,23 @@ h1 span {
 
 .headerImageContainer {
   background-image: url(../assets/home-image-1.jpg);
+  max-width: 100%;
   width: 100vw;
   height: auto;
 }
 
+.glasses {
+  position: absolute;
+  width: 49%;
+  height: auto;
+  z-index: 20;
+  right: 0px;
+  bottom: -95px;
+}
+
 .about {
   background-color: #111010;
-  padding: 60px 0;
-  position: relative;
+  padding: 110px 0 100px;
 }
 .about ul {
   margin: 0;
@@ -361,28 +389,110 @@ h1 span {
       flex-wrap: wrap;
 }
 .about ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 40px 15px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
-.about ul li .nextTo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.about ul li .nextTo i {
-  padding-right: 15px;
-}
-.about ul li .nextTo i .fa-house-chimney {
-  position: absolute;
-  left: 20px;
+.about ul li i {
+  padding: 20px 40px 0 0;
 }
 .about ul li h2 {
   margin: 10px 0;
   display: block;
+}
+
+.planLocations {
+  position: relative;
+  min-height: 100vh;
+  background: #220303;
+}
+.planLocations img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.planLocations .first {
+  min-height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.planLocations .first .imageContainer1 {
+  width: calc(50% - 70px);
+  height: 350px;
+  position: absolute;
+  left: 0;
+  top: -25px;
+  z-index: 20;
+}
+.planLocations .first .orangeBox {
+  background-color: #FF8327;
+  width: 651.5px;
+  height: 350px;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  z-index: -1;
+}
+.planLocations .first ul {
+  width: calc(50% - 70px);
+  margin: 0;
+  padding: 50px 0;
+}
+.planLocations .first ul h2 {
+  margin: 25px 0 15px;
+}
+.planLocations .second {
+  min-height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.planLocations .second .imageContainer2 {
+  width: calc(50% - 70px);
+  height: 350px;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  z-index: 20;
+}
+.planLocations .second .orangeBox {
+  background: #FF8327;
+  width: 651.5px;
+  height: 350px;
+  position: absolute;
+  right: 25px;
+  bottom: -25px;
+  z-index: -1;
+}
+.planLocations .second ul {
+  width: calc(50% - 70px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+  margin: 0;
+  text-align: right;
+}
+.planLocations .second ul h2 {
+  margin: 50px 0 20px;
+}
+.planLocations .second ul p {
+  text-align: left;
+}
+
+.planLocations button {
+  margin-top: 25px;
 }
 
 footer p {
