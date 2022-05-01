@@ -1,0 +1,11 @@
+.gallery {
+    background: $darkred;
+    padding: 90px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: calc((100% / 3) - 25px);
+        }
+    }
+}

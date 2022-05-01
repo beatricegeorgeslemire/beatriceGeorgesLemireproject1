@@ -1,0 +1,39 @@
+.events {
+    background: $black;
+    padding: 80px 0;
+    
+    .wrapper {
+        display: flex;
+        align-items: center;
+        .imageContainer3 {
+            width: 100%;
+            position: relative;
+            img {
+                max-width: 400px;
+                max-height: 400px;
+                z-index: 20;
+            }
+            .orangeBox {
+                background: $dustyorange;
+                position: absolute;
+                height: 305px;
+                width: 305px;
+                z-index: 0;
+                left: -30px;
+                bottom: -21px;
+            }
+            
+        }
+        .textContainer {
+            padding-left: 70px;
+            h2 {
+                color: $dustyorange;
+                margin: 0;
+            }
+            p {
+                padding: 25px 0;
+            }
+        }
+    }
+    
+}

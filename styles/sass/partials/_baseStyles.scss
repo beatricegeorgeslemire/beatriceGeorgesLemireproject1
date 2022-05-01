@@ -23,7 +23,7 @@ i {
 
 .wrapper {
     max-width: 1200px;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -52,5 +52,7 @@ button {
     letter-spacing: 1.3px;
     border: none;
     background-color: $rustred;
-    padding: 7px 25px;
+    a {
+    padding: 12px 25px;
+    }
 }

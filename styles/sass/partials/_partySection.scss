@@ -1,0 +1,26 @@
+.party {
+    background: $black;
+    text-align: center;
+    padding-bottom: 120px;
+    h2 {
+        color: $dustyorange;
+        margin: 0;
+        padding-top: 150px;
+    }
+    p {
+        padding: 35px 30px 40px;
+    }
+    button {
+        a {
+            padding: 10px 35px;
+        }
+        
+    }
+}
+
+.beerImage {
+    width: 100%;
+    background-image: url(../assets/banner-image.jpg);
+    height: 483px;
+    object-fit: cover;
+}
