@@ -299,6 +299,10 @@ button a {
   padding: 12px 25px;
 }
 
+.hamburger {
+  opacity: 0;
+}
+
 header {
   background-color: #111010;
   position: relative;
@@ -322,6 +326,9 @@ nav ul li {
   color: #FFFFFF;
   padding: 25px 30px;
   text-transform: uppercase;
+}
+nav ul:first-child {
+  color: #FF8327;
 }
 
 .logo {
@@ -539,8 +546,9 @@ h1 span {
   position: relative;
 }
 .events .wrapper .imageContainer3 img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 305px;
+  max-height: 305px;
+  position: relative;
   z-index: 20;
 }
 .events .wrapper .imageContainer3 .orangeBox {
@@ -548,7 +556,7 @@ h1 span {
   position: absolute;
   height: 305px;
   width: 305px;
-  z-index: 0;
+  z-index: 10;
   left: -30px;
   bottom: -21px;
 }
@@ -587,4 +595,84 @@ footer {
 footer p {
   text-align: center;
   margin: 0;
+}
+
+@media (max-width: 1800px) {
+  .planLocations .first .orangeBox {
+    width: 760px;
+  }
+  .planLocations .second .orangeBox {
+    width: 760px;
+  }
+}
+@media (max-width: 1500px) {
+  .planLocations .first .orangeBox {
+    width: 650px;
+  }
+  .planLocations .second .orangeBox {
+    width: 650px;
+  }
+}
+@media (max-width: 1260px) {
+  .planLocations .first .orangeBox {
+    width: 550px;
+  }
+  .planLocations .second .orangeBox {
+    width: 550px;
+  }
+}
+@media (max-width: 940px) {
+  .glasses {
+    bottom: -65px;
+  }
+
+  nav li a {
+    font-size: 25px;
+  }
+
+  .planLocations .first .orangeBox {
+    width: 390px;
+  }
+  .planLocations .second .orangeBox {
+    width: 390px;
+  }
+}
+@media (max-width: 768px) {
+  nav li a {
+    position: absolute;
+    top: 9999px;
+    left: 9999px;
+  }
+
+  .hamburger {
+    opacity: 1;
+    font-size: 40px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .glasses {
+    bottom: -65px;
+  }
+
+  .planLocations .first .orangeBox {
+    width: 300px;
+  }
+  .planLocations .second .orangeBox {
+    width: 300px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 200px;
+  }
+  h1 span {
+    left: -39px;
+    top: -74px;
+  }
+
+  .glasses {
+    bottom: -30px;
+  }
 }

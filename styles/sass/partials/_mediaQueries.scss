@@ -1,0 +1,135 @@
+@media(max-width: 1800px) {
+    .planLocations {
+        .first {
+            .orangeBox {
+            width: 760px;
+            }
+        }
+        .second {
+            .orangeBox {
+                width: 760px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1500px) {
+    .planLocations {
+        .first {
+            .orangeBox {
+            width: 650px;
+            }
+        }
+        .second {
+            .orangeBox {
+                width: 650px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1260px) {
+    .planLocations {
+        .first {
+            .orangeBox {
+            width: 550px;
+            }
+        }
+        .second {
+            .orangeBox {
+                width: 550px;
+            }
+        }
+    }
+
+}
+
+@media(max-width:940px) {
+    .glasses {
+        bottom: -65px;
+    }
+
+    
+
+    nav {
+        li {
+            a {
+                font-size: 25px;
+            }
+        }
+        
+    }
+
+    
+    .planLocations {
+        .first {
+            .orangeBox {
+                width: 390px;
+            }
+        }
+        .second {
+            .orangeBox {
+                width: 390px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+nav {
+    li {
+        a {
+            position: absolute;
+            top: 9999px;
+            left: 9999px;
+        }
+    }
+}
+
+.hamburger {
+    opacity: 1;
+    font-size: 40px;
+    align-items: flex-end;
+}
+
+    .glasses {
+        bottom: -65px;
+    }
+
+    .planLocations {
+        .first {
+            .orangeBox {
+                width: 300px;
+            }
+        }
+        .second {
+            .orangeBox {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    // .logo {
+    //     font-size: 40px;
+    // }
+
+        nav {
+            ul {
+
+            }
+        }
+
+    h1 {
+        font-size: 200px;
+        span {
+            left: -39px;
+            top: -74px;
+        }
+    }
+
+    .glasses {
+        bottom: -30px;
+    }
+}

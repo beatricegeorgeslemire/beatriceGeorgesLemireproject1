@@ -9,8 +9,9 @@
             width: 100%;
             position: relative;
             img {
-                max-width: 400px;
-                max-height: 400px;
+                max-width: 305px;
+                max-height: 305px;
+                position: relative;
                 z-index: 20;
             }
             .orangeBox {
@@ -18,7 +19,7 @@
                 position: absolute;
                 height: 305px;
                 width: 305px;
-                z-index: 0;
+                z-index: 10;
                 left: -30px;
                 bottom: -21px;
             }

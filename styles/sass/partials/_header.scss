@@ -3,7 +3,6 @@ header{
     position: relative;
     }
 
-
 nav {
     
     ul {
@@ -23,13 +22,9 @@ nav {
             text-transform: uppercase;
         }
     }
-    // ul {
-    //     li {
-    //         a{
-    //         color: $dustyorange;
-    //     }
-    //     }
-    // }
+    ul:first-child {
+        color: $dustyorange;
+    }
 }
 
 .logo {
