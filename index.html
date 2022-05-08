@@ -16,14 +16,17 @@
     <header>
         <nav class="topNav">
             <div class="wrapper">
-                    <ul>
+
+                <label for="toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle"/>
+
+                    <ul class="slidingMenu">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <li class="logo"><a href="index.html">Bar-One</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
             </div>
         </nav>
         <div class="headerImageContainer">
@@ -37,12 +40,12 @@
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <ul>
                     <li>
-                        <span class="fa-stack" style="vertical-align: top;">
-                            <!-- <i class="fa-solid fa-circle fa-stack-2x"></i> -->
+                        <span class="fa-stack">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
                             <i class="fa-solid fa-house-chimney fa-stack fa-inverse fa-xl"></i>
                         </span>
                         <div class="text">
@@ -51,18 +54,18 @@
                         </div>
                     </li>
                     <li>
-                        <span class="fa-stack" style="vertical-align: top;">
-                            <!-- <i class="fa-solid fa-circle fa-stack-2x"></i> -->
-                            <i class="fa-solid fa-users fa-xl"></i>
+                        <span class="fa-stack">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-users fa-xl fa-stack fa-inverse"></i>
                         </span>
                         <div class="text">
                             <h2>Community</h2>
                             <p>Ut fells eros, vehicula eu magna nec, loreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit, sit amet imperdiet dolor placerat.</p></div>
                     </li>
                     <li>
-                        <span class="fa-stack" style="vertical-align: top;">
-                            <!-- <i class="fa-solid fa-circle fa-stack-2x"></i> -->
-                            <i class="fa-solid fa-file fa-xl"></i>
+                        <span class="fa-stack">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-file fa-xl fa-stack fa-inverse"></i>
                         </span>
                         <div class="text">
                             <h2>Blog</h2>
@@ -70,9 +73,9 @@
                         </div>
                     </li>
                     <li>
-                        <span class="fa-stack" style="vertical-align: top;">
-                            <!-- <i class="fa-solid fa-circle fa-stack-2x"></i> -->
-                            <i class="fa-solid fa-phone-flip fa-xl"></i>
+                        <span class="fa-stack">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-phone-flip fa-xl fa-stack fa-inverse"></i>
                         </span>
                         <div class="text">
                             <h2>Get in touch</h2>

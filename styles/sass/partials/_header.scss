@@ -22,9 +22,6 @@ nav {
             text-transform: uppercase;
         }
     }
-    ul:first-child {
-        color: $dustyorange;
-    }
 }
 
 .logo {
@@ -35,6 +32,10 @@ nav {
     letter-spacing: 1.9px;
     color: $offwhite;
     text-transform: capitalize;
+}
+
+input[type="checkbox"] {
+    display: none;
 }
 
 h1 {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Chathura", sans-serif;
 }
@@ -299,10 +300,6 @@ button a {
   padding: 12px 25px;
 }
 
-.hamburger {
-  opacity: 0;
-}
-
 header {
   background-color: #111010;
   position: relative;
@@ -327,9 +324,6 @@ nav ul li {
   padding: 25px 30px;
   text-transform: uppercase;
 }
-nav ul:first-child {
-  color: #FF8327;
-}
 
 .logo {
   font-family: "Tulpen One", cursive;
@@ -339,6 +333,10 @@ nav ul:first-child {
   letter-spacing: 1.9px;
   color: #FFFFFF;
   text-transform: capitalize;
+}
+
+input[type=checkbox] {
+  display: none;
 }
 
 h1 {
@@ -396,6 +394,7 @@ h1 span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0;
 }
 .about ul li {
   display: -webkit-box;
@@ -405,12 +404,25 @@ h1 span {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
-.about ul li i {
-  padding: 20px 40px 0 0;
+.about ul li fa-stack {
+  padding: 10px 40px 0 0;
+  position: relative;
 }
 .about ul li h2 {
-  margin: 10px 0;
+  margin: 0px;
   display: block;
+}
+.about ul li .text {
+  margin-left: 15px;
+}
+
+.fa-circle {
+  color: #BF2603;
+  font-size: 40px;
+  padding-right: 25px;
+  margin-right: 15px;
+  position: absolute;
+  right: 10px;
 }
 
 .planLocations {
@@ -522,8 +534,8 @@ h1 span {
 }
 
 .beerImage {
-  width: 100%;
   background-image: url(../assets/banner-image.jpg);
+  width: 100%;
   height: 483px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -605,6 +617,11 @@ footer p {
     width: 760px;
   }
 }
+label[for=toggle] {
+  position: absolute;
+  top: -100px;
+}
+
 @media (max-width: 1500px) {
   .planLocations .first .orangeBox {
     width: 650px;
@@ -636,34 +653,207 @@ footer p {
   .planLocations .second .orangeBox {
     width: 390px;
   }
+
+  .beerImage {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media (max-width: 768px) {
-  nav li a {
-    position: absolute;
-    top: 9999px;
-    left: 9999px;
+  ul.slidingMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: black;
+    position: fixed;
+    z-index: 50;
+    width: 45%;
+    right: -45%;
+    top: 0;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  ul.slidingMenu a {
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    font-size: 40px;
+    width: 100%;
+    padding: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 
-  .hamburger {
-    opacity: 1;
-    font-size: 40px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+  ul.slidingMenu a:hover,
+ul.slidingMenu a:focus {
+    color: #FF8327;
+  }
+
+  input[type=checkbox]:checked + ul.slidingMenu {
+    right: 0;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  label[for=toggle] {
+    font-size: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: white;
+    z-index: 50;
+  }
+
+  .logo {
+    display: none;
   }
 
   .glasses {
     bottom: -65px;
   }
 
-  .planLocations .first .orangeBox {
-    width: 300px;
+  .orangeBox {
+    display: none;
   }
-  .planLocations .second .orangeBox {
-    width: 300px;
+
+  .about {
+    padding: 55px 0;
+  }
+  .about ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about ul li {
+    padding: 20px 0;
+  }
+
+  .planLocations .first .imageContainer1 {
+    height: 200px;
+    width: 80%;
+  }
+  .planLocations .first ul {
+    width: 100%;
+    margin: 0;
+    padding: 180px 0 0 0;
+  }
+  .planLocations .second ul {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 210px 0;
+  }
+  .planLocations .second .imageContainer2 {
+    height: 200px;
+    width: 80%;
+  }
+
+  .beerImage {
+    display: none;
+  }
+
+  .events {
+    padding: 20px;
+  }
+  .events .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .events .wrapper .imageContainer3 img {
+    position: static;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .events .wrapper .textContainer {
+    padding: 15px 0;
+  }
+
+  .gallery {
+    background: #220303;
+    padding: 30px 0;
+  }
+  .gallery .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .gallery .wrapper img {
+    width: calc(33.3333333333% - 10px);
   }
 }
 @media (max-width: 480px) {
+  h2 {
+    font-size: 55px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 30px;
+  }
+
+  ul.slidingMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: black;
+    position: fixed;
+    z-index: 50;
+    width: 65%;
+    right: -65%;
+    top: 0;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  ul.slidingMenu a {
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    font-size: 40px;
+    width: 100%;
+    padding: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  ul.slidingMenu a:hover,
+ul.slidingMenu a:focus {
+    color: #FF8327;
+  }
+
+  input[type=checkbox]:checked + ul.slidingMenu {
+    right: 0;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  label[for=toggle] {
+    font-size: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: white;
+    z-index: 50;
+  }
+
+  .logo {
+    display: none;
+  }
+
   h1 {
     font-size: 200px;
   }
@@ -675,4 +865,242 @@ footer p {
   .glasses {
     bottom: -30px;
   }
+}
+main {
+  background-color: #111010;
+}
+
+header .blogHeader {
+  color: #FFFFFF;
+  font-size: 83px;
+  font-family: "Chathura", sans-serif;
+  text-align: start;
+}
+header .headerImageContainer {
+  background-image: url(../assets/blog-header-1.jpg);
+  max-width: 100%;
+  width: 100vw;
+  height: 60vh;
+}
+
+.asideMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.asideMenu .sideBar {
+  padding-top: 70px;
+  background-color: #111010;
+  width: 35%;
+  position: relative;
+}
+.asideMenu .sideBar img {
+  position: absolute;
+  z-index: 20;
+}
+.asideMenu .sideBar .missionSection {
+  margin-left: 20%;
+  background-color: #220303;
+  padding-top: 420px;
+  width: 75%;
+  padding-left: 20px;
+  position: relative;
+  top: 10px;
+  z-index: 10;
+}
+.asideMenu .sideBar h2 {
+  margin: 0;
+  padding: 20px 0 10px;
+}
+.asideMenu .sideBar a {
+  display: block;
+  color: #FF8327;
+  padding-bottom: 15px;
+}
+.asideMenu .sideBar .recentPosts {
+  margin-top: 0;
+}
+.asideMenu .sideBar ul {
+  margin: 0;
+  font-size: 39px;
+  padding: 0 0 20px 0;
+}
+.asideMenu .sideBar ul li::before {
+  content: "•";
+  color: #BF2603;
+  font-size: 39px;
+  font-weight: bolder;
+  display: inline-block;
+  width: 20px;
+  margin-left: 15px;
+}
+.asideMenu .newMenu {
+  width: 60%;
+  margin-left: auto;
+  margin-right: 0;
+  padding-bottom: 0;
+}
+.asideMenu .newMenu .wrapper {
+  position: relative;
+  top: 0px;
+  margin-top: 20px;
+  padding-top: 45px;
+}
+.asideMenu .newMenu .blogPost {
+  border-bottom: 5px solid #FF8327;
+  border-left: 5px solid #FF8327;
+  margin-left: -20px;
+  position: relative;
+  top: -130px;
+  right: 0;
+}
+.asideMenu .newMenu .foodImage {
+  position: relative;
+  right: 0px;
+  top: -130px;
+  z-index: 20;
+}
+.asideMenu .newMenu .foodImage::before {
+  content: "";
+  background: #FF8327;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  height: 95%;
+  width: 20px;
+}
+.asideMenu .newMenu .foodImage::after {
+  content: "";
+  background: #FF8327;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  height: 20px;
+  width: 98%;
+}
+.asideMenu .newMenu h2 {
+  margin: 0;
+}
+.asideMenu .newMenu h3 {
+  padding-bottom: 20px;
+}
+.asideMenu .newMenu p {
+  padding: 0 0 25px;
+}
+
+h3 {
+  font-size: 39px;
+  color: #FF8327;
+  margin: 0;
+}
+
+.comments {
+  width: 50%;
+  margin-left: 44%;
+  margin-right: 15%;
+  position: relative;
+  top: -50px;
+}
+.comments h2 {
+  margin: 0 0 30px;
+}
+.comments .commentOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 80px;
+}
+.comments .commentOne .commentImage1 {
+  width: 50%;
+  padding: 12px 30px 0 0;
+}
+.comments .commentTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 30px;
+}
+.comments .commentTwo .commentImage2 {
+  width: 28%;
+  padding: 12px 0 0 0;
+}
+.comments .commentTwo .commentTwoText {
+  padding-left: 29px;
+}
+
+form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  border-style: none;
+}
+form .nextToEachOther {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form .flexContainer {
+  width: 45%;
+}
+form .flexContainer label {
+  padding: 0 0 15px 20px;
+}
+form label {
+  display: block;
+  font-size: 39px;
+  background-color: #111010;
+}
+form input {
+  display: block;
+  background-color: #111010;
+  width: 100%;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid #FF8327;
+}
+form textarea {
+  background-color: #111010;
+  border: 2px solid #FF8327;
+  border-bottom: 2px solid #FF8327;
+}
+form button {
+  margin-top: 30px;
+  cursor: pointer;
+}
+form input[type=text]::-webkit-input-placeholder {
+  font-family: "Chathura", sans-serif;
+  color: #FFFFFF;
+}
+form input[type=text]::-moz-placeholder {
+  font-family: "Chathura", sans-serif;
+  color: #FFFFFF;
+}
+form input[type=text]:-ms-input-placeholder {
+  font-family: "Chathura", sans-serif;
+  color: #FFFFFF;
+}
+form input[type=text]::-ms-input-placeholder {
+  font-family: "Chathura", sans-serif;
+  color: #FFFFFF;
+}
+form input[type=text]::placeholder {
+  font-family: "Chathura", sans-serif;
+  color: #FFFFFF;
 }
