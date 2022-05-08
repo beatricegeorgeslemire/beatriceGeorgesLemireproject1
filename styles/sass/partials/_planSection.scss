@@ -18,15 +18,9 @@
                 left: 0;
                 top: -25px;
                 z-index: 20;
-            }
-            .orangeBox {
-                background-color: $dustyorange;
-                width: 651.5px;
-                height: 350px;
-                position: absolute;
-                left: 25px;
-                top: 25px;
-                z-index: -1;
+                img {
+                    box-shadow: 18px 18px 0px -3px $dustyorange;
+                }
             }
             ul {
                 width: calc(50% - 70px);
@@ -48,16 +42,10 @@
                 right: 0;
                 bottom: -25px;
                 z-index: 20;
-            }
-            .orangeBox {
-                background: $dustyorange;
-                width: 651.5px;
-                height: 350px;
-                position: absolute;
-                right: 25px;
-                bottom: -25px;
-                z-index: -1;
+                img {
+                    box-shadow: -18px 18px 0px -3px $dustyorange;
                 }
+            }
             ul {
                 width: calc(50% - 70px);
                 align-items: center;

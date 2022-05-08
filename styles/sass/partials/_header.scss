@@ -1,5 +1,6 @@
 header{
     background-color: $black;
+    background: url(../assets/home-image-1.jpg) no-repeat center / cover;
     position: relative;
     }
 
@@ -66,12 +67,12 @@ h1 {
     }
 }
 
-.headerImageContainer {
-    background-image: url(../assets/home-image-1.jpg);
-    max-width: 100%;
-    width: 100vw;
-    height: auto;
-}
+// .headerImageContainer {
+//     // background-image: url(../assets/home-image-1.jpg);
+// //     max-width: 100%;
+// //     width: 100vw;
+// //     height: auto;
+// // }
 
 .glasses {
     position: absolute;

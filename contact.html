@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bar-One</title>
+    <script src="https://kit.fontawesome.com/f200e90931.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Chathura&family=Tulpen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="topNav">
+            <div class="wrapper">
+
+                <label for="toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle"/>
+
+                    <ul class="slidingMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li class="logo"><a href="index.html">Bar-One</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </div>
+        </nav>
+        <div class="contactImageHeader">
+            <div class="wrapper">
+                <h1 class="contactHeader">Get in Touch</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper contactFlex">
+            <div>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="email">
+                    <p>info@email.com</p>
+                </div>
+                <div class="phoneAddress">
+                    <p>123 - 456 - 7890</p>
+                    <p>123 Queen Street West, Unit</p>
+                    <p>10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
+            </div>
+
+                <form action="#" method="GET" class="contactForm" name="commentForm">
+                    <div class="nextToEachOther">
+                        <div class="flexContainer">
+                            <label for="userName" >Name</label>
+                            <input type="text" id="userName" name="userName">
+                        </div>
+                        <div class="flexContainer">
+                            <label for="userEmail">Email address</label>
+                            <input type="text" id="userEmail" name="userEmail">
+                        </div>
+                    </div>
+                    <label for="userComment"></label>
+                    <textarea name="comment" id="userComment" cols="30" rows="10" placeholder="Comment">Comment</textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2019 HackerYou</p>
+    </footer>
+</body>
+</html>

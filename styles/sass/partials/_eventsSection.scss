@@ -12,16 +12,7 @@
                 max-width: 305px;
                 max-height: 305px;
                 position: relative;
-                z-index: 20;
-            }
-            .orangeBox {
-                background: $dustyorange;
-                position: absolute;
-                height: 305px;
-                width: 305px;
-                z-index: 10;
-                left: -30px;
-                bottom: -21px;
+                box-shadow: -18px 18px 0px -3px $dustyorange;
             }
             
         }

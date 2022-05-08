@@ -302,6 +302,7 @@ button a {
 
 header {
   background-color: #111010;
+  background: url(../assets/home-image-1.jpg) no-repeat center/cover;
   position: relative;
 }
 
@@ -367,13 +368,6 @@ h1 span {
   left: -80px;
 }
 
-.headerImageContainer {
-  background-image: url(../assets/home-image-1.jpg);
-  max-width: 100%;
-  width: 100vw;
-  height: auto;
-}
-
 .glasses {
   position: absolute;
   width: 49%;
@@ -404,9 +398,8 @@ h1 span {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
-.about ul li fa-stack {
-  padding: 10px 40px 0 0;
-  position: relative;
+.about ul li span {
+  font-size: 25px;
 }
 .about ul li h2 {
   margin: 0px;
@@ -415,14 +408,12 @@ h1 span {
 .about ul li .text {
   margin-left: 15px;
 }
+.about ul li .text:first-child {
+  margin-left: 15px;
+}
 
 .fa-circle {
   color: #BF2603;
-  font-size: 40px;
-  padding-right: 25px;
-  margin-right: 15px;
-  position: absolute;
-  right: 10px;
 }
 
 .planLocations {
@@ -453,14 +444,9 @@ h1 span {
   top: -25px;
   z-index: 20;
 }
-.planLocations .first .orangeBox {
-  background-color: #FF8327;
-  width: 651.5px;
-  height: 350px;
-  position: absolute;
-  left: 25px;
-  top: 25px;
-  z-index: -1;
+.planLocations .first .imageContainer1 img {
+  -webkit-box-shadow: 18px 18px 0px -3px #FF8327;
+          box-shadow: 18px 18px 0px -3px #FF8327;
 }
 .planLocations .first ul {
   width: calc(50% - 70px);
@@ -487,14 +473,9 @@ h1 span {
   bottom: -25px;
   z-index: 20;
 }
-.planLocations .second .orangeBox {
-  background: #FF8327;
-  width: 651.5px;
-  height: 350px;
-  position: absolute;
-  right: 25px;
-  bottom: -25px;
-  z-index: -1;
+.planLocations .second .imageContainer2 img {
+  -webkit-box-shadow: -18px 18px 0px -3px #FF8327;
+          box-shadow: -18px 18px 0px -3px #FF8327;
 }
 .planLocations .second ul {
   width: calc(50% - 70px);
@@ -534,11 +515,8 @@ h1 span {
 }
 
 .beerImage {
-  background-image: url(../assets/banner-image.jpg);
-  width: 100%;
-  height: 483px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background: url(../assets/banner-image.jpg) no-repeat center/cover;
+  min-height: 30vw;
 }
 
 .events {
@@ -561,16 +539,8 @@ h1 span {
   max-width: 305px;
   max-height: 305px;
   position: relative;
-  z-index: 20;
-}
-.events .wrapper .imageContainer3 .orangeBox {
-  background: #FF8327;
-  position: absolute;
-  height: 305px;
-  width: 305px;
-  z-index: 10;
-  left: -30px;
-  bottom: -21px;
+  -webkit-box-shadow: -18px 18px 0px -3px #FF8327;
+          box-shadow: -18px 18px 0px -3px #FF8327;
 }
 .events .wrapper .textContainer {
   padding-left: 70px;
@@ -602,42 +572,13 @@ h1 span {
 footer {
   margin: 0;
   background-color: rgb(66, 66, 66);
-  padding: 8px 0;
+  padding: 10px 0;
 }
 footer p {
   text-align: center;
   margin: 0;
 }
 
-@media (max-width: 1800px) {
-  .planLocations .first .orangeBox {
-    width: 760px;
-  }
-  .planLocations .second .orangeBox {
-    width: 760px;
-  }
-}
-label[for=toggle] {
-  position: absolute;
-  top: -100px;
-}
-
-@media (max-width: 1500px) {
-  .planLocations .first .orangeBox {
-    width: 650px;
-  }
-  .planLocations .second .orangeBox {
-    width: 650px;
-  }
-}
-@media (max-width: 1260px) {
-  .planLocations .first .orangeBox {
-    width: 550px;
-  }
-  .planLocations .second .orangeBox {
-    width: 550px;
-  }
-}
 @media (max-width: 940px) {
   .glasses {
     bottom: -65px;
@@ -645,18 +586,6 @@ label[for=toggle] {
 
   nav li a {
     font-size: 25px;
-  }
-
-  .planLocations .first .orangeBox {
-    width: 390px;
-  }
-  .planLocations .second .orangeBox {
-    width: 390px;
-  }
-
-  .beerImage {
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 @media (max-width: 768px) {
@@ -715,10 +644,6 @@ ul.slidingMenu a:focus {
     bottom: -65px;
   }
 
-  .orangeBox {
-    display: none;
-  }
-
   .about {
     padding: 55px 0;
   }
@@ -749,10 +674,6 @@ ul.slidingMenu a:focus {
   .planLocations .second .imageContainer2 {
     height: 200px;
     width: 80%;
-  }
-
-  .beerImage {
-    display: none;
   }
 
   .events {
@@ -865,6 +786,14 @@ ul.slidingMenu a:focus {
   .glasses {
     bottom: -30px;
   }
+
+  .party {
+    padding-bottom: 35px;
+  }
+
+  .imageContainer3 {
+    padding-top: 30px;
+  }
 }
 main {
   background-color: #111010;
@@ -945,6 +874,7 @@ header .headerImageContainer {
   top: 0px;
   margin-top: 20px;
   padding-top: 45px;
+  padding-bottom: 40px;
 }
 .asideMenu .newMenu .blogPost {
   border-bottom: 5px solid #FF8327;
@@ -1103,4 +1033,71 @@ form input[type=text]::-ms-input-placeholder {
 form input[type=text]::placeholder {
   font-family: "Chathura", sans-serif;
   color: #FFFFFF;
+}
+
+.contactImageHeader {
+  background-image: url(../assets/contact-header-1.jpg);
+  max-width: 100%;
+  width: 100vw;
+  height: 60vh;
+}
+.contactImageHeader .contactHeader {
+  color: #FFFFFF;
+  font-size: 83px;
+  font-family: "Chathura", sans-serif;
+  text-align: start;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+.contactFlex .socials {
+  padding: 15px 25px 25px 0;
+}
+.contactFlex .socials i {
+  padding-right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.contactFlex .email {
+  padding-bottom: 30px;
+}
+
+.contactForm {
+  background: #220303;
+  padding: 40px 40px;
+  width: 50vw;
+  position: relative;
+  top: -170px;
+}
+.contactForm label,
+.contactForm input,
+.contactForm textarea {
+  background: #220303;
+}
+
+.contactForm::before {
+  content: "";
+  background: #FF8327;
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  height: 95%;
+  width: 20px;
+}
+
+.contactForm::after {
+  content: "";
+  background: #FF8327;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  height: 20px;
+  width: 97%;
 }

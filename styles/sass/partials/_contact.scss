@@ -1,0 +1,62 @@
+
+.contactImageHeader {
+    background-image: url(../assets/contact-header-1.jpg);
+    max-width: 100%;
+    width: 100vw;
+    height: 60vh;
+
+    .contactHeader {
+    color: $offwhite;
+    font-size: 83px;
+    font-family: 'Chathura', sans-serif;
+    text-align: start;
+    }
+}
+
+.contactFlex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    .socials {
+        padding: 15px 25px 25px 0;
+        i {
+            padding-right: 20px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+    .email {
+        padding-bottom: 30px;
+    }
+}
+
+.contactForm {
+    background: $darkred;
+    padding: 40px 40px;
+    width: 50vw;
+    position: relative;
+    top: -170px;
+    label,
+    input,
+    textarea {
+        background: $darkred;
+    }
+}
+.contactForm::before {
+            content: '';
+            background: $dustyorange;
+            position: absolute;
+            bottom: 0;
+            right: -20px;
+            height: 95%;
+            width: 20px;
+}
+.contactForm::after {
+    content: '';
+            background: $dustyorange;
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            height: 20px;
+            width: 97%;
+}

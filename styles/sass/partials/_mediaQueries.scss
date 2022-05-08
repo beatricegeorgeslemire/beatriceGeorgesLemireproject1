@@ -1,60 +1,7 @@
-@media(max-width: 1800px) {
-    .planLocations {
-        .first {
-            .orangeBox {
-            width: 760px;
-            }
-        }
-        .second {
-            .orangeBox {
-                width: 760px;
-            }
-        }
-    }
-}
-label[for="toggle"] {
-    position: absolute;
-    top: -100px;
-}
-
-
-@media(max-width: 1500px) {
-    .planLocations {
-        .first {
-            .orangeBox {
-            width: 650px;
-            }
-        }
-        .second {
-            .orangeBox {
-                width: 650px;
-            }
-        }
-    }
-}
-
-@media(max-width: 1260px) {
-    .planLocations {
-        .first {
-            .orangeBox {
-            width: 550px;
-            }
-        }
-        .second {
-            .orangeBox {
-                width: 550px;
-            }
-        }
-    }
-
-}
-
 @media(max-width:940px) {
     .glasses {
         bottom: -65px;
     }
-
-    
 
     nav {
         li {
@@ -64,26 +11,7 @@ label[for="toggle"] {
         }
         
     }
-
-    
-    .planLocations {
-        .first {
-            .orangeBox {
-                width: 390px;
-            }
-        }
-        .second {
-            .orangeBox {
-                width: 390px;
-            }
-        }
-    }
-
-    .beerImage {
-        object-fit: cover;
-    }
-}
-
+}    
 
 @media(max-width:768px) {
     ul.slidingMenu {
@@ -136,10 +64,6 @@ label[for="toggle"] {
         bottom: -65px;
     }
 
-    .orangeBox {
-        display: none;
-    }
-
     //About section
 
     .about {
@@ -177,13 +101,6 @@ label[for="toggle"] {
                 width: 80%;
             }
         }
-    }
-
-
-//Party Section 
-
-    .beerImage {
-        display: none;
     }
 
 //Events
@@ -291,5 +208,15 @@ label[for="toggle"] {
     .glasses {
         bottom: -30px;
     }
-}
 
+    //Party section
+
+    .party {
+        padding-bottom: 35px;
+    }
+
+    //Events sections
+    .imageContainer3 {
+        padding-top: 30px;
+    }
+}
