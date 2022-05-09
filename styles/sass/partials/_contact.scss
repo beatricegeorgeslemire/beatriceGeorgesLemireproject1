@@ -1,11 +1,8 @@
 
-.contactImageHeader {
-    background-image: url(../assets/contact-header-1.jpg);
-    max-width: 100%;
-    width: 100vw;
+.contactHeader {
+    background: url(../assets/contact-header-1.jpg) no-repeat center / cover;
     height: 60vh;
-
-    .contactHeader {
+    .contactHeaderTitle {
     color: $offwhite;
     font-size: 83px;
     font-family: 'Chathura', sans-serif;

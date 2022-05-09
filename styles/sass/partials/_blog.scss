@@ -2,18 +2,14 @@ main {
     background-color: $black;
 }
 
-header {
-    .blogHeader {
+.blogHeader {
+    background: url(../assets/blog-header-1.jpg) no-repeat center / cover;
+    height: 60vh;
+    .blogHeaderTitle {
         color: $offwhite;
         font-size: 83px;
         font-family: 'Chathura', sans-serif;
         text-align: start;
-    }
-    .headerImageContainer {
-        background-image: url(../assets/blog-header-1.jpg);
-        max-width: 100%;
-        width: 100vw;
-        height: 60vh;
     }
 }
 
