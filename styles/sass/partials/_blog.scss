@@ -20,7 +20,7 @@ main {
         background-color: $black;
         width: 35%;
         position: relative;
-        img {
+        .beerPour {
             position: absolute;
             z-index: 20;
         }
